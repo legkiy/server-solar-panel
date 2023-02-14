@@ -2,11 +2,10 @@
   "name": "server",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "type": "module",
+  "main": "app.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js"
+    "start": "node ./dist/app.js",
+    "dev": "tsc && nodemon node ./dist/app.js"
   },
   "keywords": [],
   "author": "",
