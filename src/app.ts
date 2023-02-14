@@ -3,7 +3,7 @@ import path from 'path';
 import fs from 'fs';
 import axios from 'axios';
 import { parse } from 'fast-csv';
-import { getCsvData } from './utils/dataFetch';
+import { getCsvData, nativeGetData, nativeGetData2 } from './utils/dataFetch';
 interface ICSVData {
   date: string;
   time: string;
@@ -21,14 +21,14 @@ const host = 'localhost';
 
 // app.use(express.static(path.resolve(__dirname, 'public')));
 
+app.use('/day', async (req: Request, res: Response) => {
+  nativeGetData2();
+  res.json({ data: nativeGetData2() });
+});
+
 app.get('/', (req: Request, res: Response) => {
   res.json({ greeting: 'Hello world!' });
 });
-
-app.get('/day', (req: Request, res: Response) => {
-  getCsvData();
-});
-
 app.listen(port, () => {
   console.log(`Server start on: http://${host}:${port}`);
 });
