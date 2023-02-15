@@ -313,6 +313,11 @@ cross-spawn@^7.0.3:
     shebang-command "^2.0.0"
     which "^2.0.1"
 
+csv-to-js-parser@^2.3.5:
+  version "2.3.5"
+  resolved "https://registry.yarnpkg.com/csv-to-js-parser/-/csv-to-js-parser-2.3.5.tgz#ea33ea0fe4e81e98a498187ba619ae17a110e36e"
+  integrity sha512-g9gDA+2h+DfqrOc2ob1J1OEwmoHkNMY+/LkTC+4E6b/Wjrjd4DHWiPzR+5cehLClJoO6JeNrL/F8HxkkWB2nMg==
+
 debug@2.6.9:
   version "2.6.9"
   resolved "https://registry.npmjs.org/debug/-/debug-2.6.9.tgz"
@@ -384,6 +389,11 @@ event-stream@=3.3.4:
     split "0.3"
     stream-combiner "~0.0.4"
     through "~2.3.1"
+
+express-csv@^0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/express-csv/-/express-csv-0.6.0.tgz#db792d85b262207e561d6362ba39a1e681e3d503"
+  integrity sha512-rJxnda4SqxYyAJ8fnAoF0zzxMvHgjFCKnkStrHE0VVLSNgjZESRQprC0Buax0D4V9EuR4HRmZfCH5IS46cxEow==
 
 express@^4.18.2:
   version "4.18.2"
