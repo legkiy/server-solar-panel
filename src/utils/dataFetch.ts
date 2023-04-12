@@ -51,7 +51,7 @@ export const getData = (panel: number) => {
     arrProd.push(prod[panel]);
     arrayData.push(amp1);
   });
-  return [arrDate, arrTime, arrAmp, arrVolt, arrWatt, arrProd];
+  return { arrDate, arrTime, arrAmp, arrVolt, arrWatt, arrProd };
   // table.forEach((row, panel) => {
   //   const columns = row.split(',');
 

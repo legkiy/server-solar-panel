@@ -32,6 +32,10 @@ app.use('/test', (req: Request, res: Response) => {
   res.json({ test: 'from back' });
 });
 
+app.post('/data', (req: Request, res: Response) => {
+  res.send(getData(0));
+});
+
 app.get('/', (req: Request, res: Response) => {
   res.json({ greeting: 'Server start on PORT  = ' + port });
 });
