@@ -35,7 +35,7 @@ app.use('/test', (req: Request, res: Response) => {
 app.post('/first-panel', (req: Request, res: Response) => {
   res.send(getData(0));
 });
-app.post('/secons-panel', (req: Request, res: Response) => {
+app.post('/second-panel', (req: Request, res: Response) => {
   res.send(getData(1));
 });
 app.post('/third-panel', (req: Request, res: Response) => {
