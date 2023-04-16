@@ -7,7 +7,8 @@
   "scripts": {
     "watch": "nodemon --watch './**/*.{ts,graphql}' --exec node --experimental-specifier-resolution=node --loader ts-node/esm src/app.ts",
     "dev": "tsc-watch --onSuccess \"npm run watch\"",
-    "start": "node ./dist/app.js"
+    "start": "node ./dist/app.js",
+    "cam": "node ./Steaming-IP-camera/src/index.js"
   },
   "keywords": [],
   "author": "",
